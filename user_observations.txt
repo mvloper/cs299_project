@@ -1,0 +1,15 @@
+User A:
+- gets eye strain from looking at bright screens for too long
+- uses dark mode when it is available
+- wishes dark mode was available on more websites like google docs 
+
+User B:
+- is vision impaired and has trouble reading certain websites
+- high contrast helps for readability fro user B
+- while most wbesites have high contrast options not all do
+
+User C:
+- stays up late
+- wants to read things at night without it being bright/waking up their roommate
+- when it is dark, the effects of bright screens are more severe
+- dark mode would help with this
