@@ -1,0 +1,3 @@
+Identifying the Problem: 
+
+The problem we have observed is the lack of dark mode or high contrast mode on various commonly used websites, such as Google Drive (see fig. 1), which lacks both, and Canvas (see fig. 2), which has a high contrast mode, but not a dark mode. This causes issues, such as headaches when looking at a bright screen for too long, or the inabiity to easily read text without high contrast. Our project would implement a browser extension that would create dark mode and/or high contrast mode for websites that do not natively have one. 
