@@ -1,0 +1,5 @@
+5: The diagram clearly described all relevant blocks
+and identified pre- existing software and hardware that
+would be used. Another team, with sufficient resources, could
+likely use the diagram as a high- level guide to
+build the proposed system.
