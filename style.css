@@ -3,6 +3,7 @@
   --txt:#dddddd;
   --div1:#333333;
   --div2:#444444;
+  --div3:#555555;
   --border:#666666;
   --txt2:#999999;
   --link:#ffdd55;
@@ -10,19 +11,31 @@
   --link3:#ff8800;
 }
 body{
+  padding:0;
+  margin:0;
   background-color: var(--bg);
   color:var(--txt)
-}
-header{
-  text-align: center;
-  margin:50px;
 }
 #container{
   margin:auto;
   max-width: 1000px;
 }
+header{
+  background-color: var(--div1);
+}
+header a{
+  display:block;
+  width:min-content;
+  height:min-content;
+  background-color: var(--div2);
+  padding:10px;
+}
+header a:hover{
+  background-color:var(--div3);
+}
 p{margin:0px;}
-h1, h2, h4{margin:10px;}
+h1{margin:50px; text-align: center;}
+h2, h3, h4{margin:10px;}
 a:link{color:var(--link);}
 a:visited{color:var(--link)}
 a:hover{color:var(--link2)}
