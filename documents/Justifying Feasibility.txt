@@ -1,0 +1,3 @@
+Justifying Feasibility
+
+While this seems like an intensive project, we will definitely be able to build the system by the end of the semester. There are manuals for each browser that detail the process of making an extension, and there is no additional hardware necessary to create our project. We both have some experience with JavaScript, HTML, and CSS, which means that there won't be the added pressure of learning new programming or markup languages on top of implementing them. Once we have it working on one or two sites, it will not be much more dfficult to implement it on more. With 20-30 hours of work apiece, it should not be too difficult to build our extension within the semester. 

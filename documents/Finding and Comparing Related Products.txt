@@ -1,0 +1,28 @@
+Finding Related Products: 
+
+We looked at several extensions on each of Google Chrome and Mozilla Firefox. 
+
+Chrome: 
+- Shade Dark Mode: While this worked very well for the most part, it accomplished nothing when looking at Amazon.com, and likely also fails to do anything on some other websites as well. 
+- Night Theme: This theme achieves dark mode by inverting the colors - including those in images. This leads to an overall bad experience using the extension.
+- Dark Theme for Chrome: If you already have dark mode set to on for a website that has one build in, this extension will effectively turn it back to light mode. It doesn't invert the colors entirely, but in terms of brightness - light colors become dark and dark colors become light. 
+- Dark Theme - Dark Reader for Chrome: The best of these extensions for Chrome; however, when changing font color in Google Docs, the colors show up in such a way that it is impossible to tell what color the text would actually be if you were to print the document.
+- Dark Mode for Web: Inverts all colors other than those in images. On sites with a native dark mode, effectively turns it back to light mode.
+- Dark Mode Chrome: On most sites we looked at, this extension did nothing. On those where it worked, it just inverted the colors. 
+- Dark Mode - Dark Reader for Chrome: While it works on most websites, it doesn't always look great - more like the colors were inverted and then a gray filter was applied. 
+- High Contrast: This creates an inverted color dark mode, or can increase contrast in light mode. However, the increased contrast sometimes, such as on Canvas, makes the text harder to read. 
+
+Firefox: 
+- Turn off the Lights: This is specifically for sites that play video - it dims the screen around the video. focusing on the video. It works very well for those, but has no application for other sites.
+- Super Dark Mode: While this one works, it generally chooses weird colors. It doesn't make sites that use a native dark mode go to light mode, but does slightly lighten the background color on at least some sites.
+- Dark Reader: By far the best of these extensions. The only issue is that when changing font colors, the color choices have been changed and it is therefore very difficult to tell what color the text would be if printed.
+- Dark Mode - Night Eye: While this one works well, it requires a paid subscription if you wish to use it on more than 5 websites. 
+- Dark Mode (developed by Bernard): In Google Docs, the paper color stays a bright white, which makes the extension mostly useless for that site. It also makes some text unreadable in Gmail.
+- Dark Mode (developed by Rojo): This doesn't change any of the colors, it just dims the browser. It has the same effect as turning down the brightness of your computer
+- Dark Mode (developed by Dark Mode): On google drive, it inverts the text color, but not the color of the paper - making it white on white and unreadable. It also removes any theme you have set for your Gmail. 
+
+
+Comparing Related Products: 
+
+Our proposed solution will work for most, if not all websites. It will, rather than indiscriminately inverting all of the colors on the page, have allowances built in for things like color pickers to be unaffected. Like many of the extensions detailed earlier, ours will have the ability to change contrast levels. Our first persona, Mim, would use this extension to make Overleaf, the site they use to type up mathematical equaitons in LaTeX, have a dark background so that it would cause less pain from the bright screen. James, our second persona, would use this extension primarily in Google Docs with the high contrast mode turned on, to make sure that they can read the text without struggling. 
+
