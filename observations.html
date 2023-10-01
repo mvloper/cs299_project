@@ -18,28 +18,33 @@
       .persona span{
         color:var(--txt2);
       }
-      #Personas table{
+      table{
         width:100%;
         border-spacing: 5px;
         padding:5px;
       }
-      #Personas td{
+      td{
         vertical-align: top;
         padding:5px;
       }
-      #Personas td:first-child {
+      td:first-child {
         font-weight: bold;
         text-align: right;
         color:var(--txt2);
       }
-      #Personas td:last-child{
+      td:last-child{
         background-color:var(--div2);
       }
-      #Personas .portrait{
+      .portrait{
         border:10px solid var(--border);
         margin-left:auto;
         margin-right:auto;
         width:100px;
+      }
+      .figure{
+        border:10px solid var(--border);
+        margin:5px;
+        width:70%;
       }
   </style>
   <link href="/style.css" rel="stylesheet" type="text/css" media="all">
@@ -56,36 +61,37 @@
 </head>
 <body>
   <header><a href="/index.html">home</a></header>
-  
   <div id="container">
     <h1>Project Observations and Proposal</h1>
     <h2>Observations:</h2>
-    <div class="wrapper">
-      <div>
-        <h4>User A:</h4>
-        <ul>
-        <li>gets headaches from looking at bright screens for too long</li>
-        <li>uses dark mode when it is available</li>
-        <li>wishes dark mode was available on more websites like google docs</li>
-        </ul>
-      </div>
-      <div>
-        <h4>User B:</h4>
-        <ul>
-        <li>is vision impaired and has trouble reading certain websites</li>
-        <li>high contrast helps for readability fro user B</li>
-        <li>while most wbesites have high contrast options not all do</li>
-        </ul>
-      </div>
-      <div>
-        <h4>User C:</h4>
-        <ul>
-        <li>stays up late</li>
-        <li>wants to read things at night without it being bright/waking up their roommate</li>
-        <li>when it is dark, the effects of bright screens are more severe, dark mode would help with this.</li>
-        </ul>
-      </div>
-    </div>
+    <section id="users">
+      <div class="wrapper">
+        <div>
+          <h4>User A:</h4>
+          <ul>
+          <li>gets headaches from looking at bright screens for too long</li>
+          <li>uses dark mode when it is available</li>
+          <li>wishes dark mode was available on more websites like google docs</li>
+          </ul>
+        </div>
+        <div>
+          <h4>User B:</h4>
+          <ul>
+          <li>is vision impaired and has trouble reading certain websites</li>
+          <li>high contrast helps for readability fro user B</li>
+          <li>while most wbesites have high contrast options not all do</li>
+          </ul>
+        </div>
+        <div>
+          <h4>User C:</h4>
+          <ul>
+          <li>stays up late</li>
+          <li>wants to read things at night without it being bright/waking up their roommate</li>
+          <li>when it is dark, the effects of bright screens are more severe, dark mode would help with this.</li>
+          </ul>
+        </div>
+      </div><!--wrapper-->
+    </section>
     <h2>Personas:</h2>
     <section id="Personas">
       <div class="persona" id="p1">
@@ -149,6 +155,27 @@
         </div><!--wrapper-->
       </div><!--p2-->
     </section><!--Personas-->
+    <section id="use-case-scenario"></section>
+    <section id="problem">
+      <h2>Identifying the Problem:</h2>
+      <div class="wrapper">
+        <div>
+          The problem we have observed is the lack of dark mode or high contrast mode 
+          on various commonly used websites, such as Google Drive (see fig. 1), which lacks 
+          both, and Canvas (see fig. 2), which has a high contrast mode, but not a dark mode. 
+          This causes issues, such as headaches when looking at a bright screen for too long, 
+          or the inabiity to easily read text without high contrast. Our project would 
+          implement a browser extension that would create dark mode and/or high contrast 
+          mode for websites that do not natively have one. 
+        </div>
+        <div style="border:none;flex:1.5">
+          <img class="figure" src="/images/googledocs.png">
+          <p>fig.1</p>
+          <img class="figure" src="/images/canvas.png">
+          <p>fig.2</p>
+        </div>
+      </div><!--wrapper-->
+    </section><!--problem-->
   </div><!--container-->
 </body>
 </html>

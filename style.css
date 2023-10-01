@@ -47,6 +47,7 @@ a:active{color:var(--link3)}
   gap:10px;
 }
 .wrapper>div{
+  display:relative;
   border:2px solid var(--border);
   border-radius: 10px;
   padding:10px;
