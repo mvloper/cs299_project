@@ -21,24 +21,26 @@ body{
   max-width: 1000px;
 }
 header{
+  display:flex;
+  padding:5px;
   background-color: var(--div1);
 }
 header a{
+  margin:0 10px 0 10px;
   display:block;
-  width:min-content;
   height:min-content;
-  background-color: var(--div2);
   padding:10px;
+  border-radius:5px;
 }
 header a:hover{
-  background-color:var(--div3);
+  background-color:var(--div2);
 }
 p{margin:0px;}
 h1{margin:50px; text-align: center;}
 h2, h3, h4{margin:10px;}
-a:link{color:var(--link);}
+a:link{text-decoration: none;color:var(--link);}
 a:visited{color:var(--link)}
-a:hover{color:var(--link2)}
+a:hover{text-decoration: underline;color:var(--link2)}
 a:active{color:var(--link3)}
 .wrapper{
   margin:10px;

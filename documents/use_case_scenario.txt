@@ -3,6 +3,9 @@ The use case scenario provides a comprehensive and informative
 description of user interaction with the proposed system and clearly
 explains how it addresses the user's need.
 
-With our browser extension installed, a user could select options to make a website darker
-by turning background elements dark gray and text/icons bright. Or they could make
-a website high contrast by turning background elements white and text/icons black and blue.
+With our browser extension installed, a user could select options to make a website darker 
+by turning background elements dark gray and text/icons bright. Or they could make 
+a website high contrast by turning background elements white and text/icons black and blue. 
+These options would be accessed from the extensions menu in their browser. 
+Our extension would provide multiple solutions to issues of websites causing eye strain 
+or being difficult to read. 
