@@ -1,0 +1,23 @@
+5: A convincing rationale is offered for the described usability goals,
+the benchmark tasks are appropriate for these goals, relate to the most
+important elements of system functionality, and only tell the
+user what (and not how) to do.
+
+What you are interested in determining is whether these usability goals are being met. 
+To do so, you test your prototypes on a set of benchmark tasks, which should:
+• encompass the most important elements of your system's functionality
+• be broad, such as "add an item to the calendar" rather than "add a meeting of high 
+  urgency with
+John at 5 pm on Thursday February 17, 2016".
+• have definite start and end points
+• tell the user what to do, not how to do it
+Note that a benchmark task can (and often will) consist of several smaller subtasks, 
+such as navigation, selection, confirmation/cancellation, etc.
+
+usability goals:
+- new users should be capable of navigating and applying the extension within 15 minutes of use.
+
+benchmark tasks:
+- apply one of the pre-built color pallettes to a web page
+- create a custom pallette
+- 

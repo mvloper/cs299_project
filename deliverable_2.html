@@ -6,6 +6,18 @@
   <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
   <title>HCI project</title>
   <style>
+    .img-wrapper{
+      margin:10px;
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content: space-around;
+    }
+    .img-wrapper>img{
+      max-height:30vh;
+      box-sizing: border-box;
+    }
   </style>
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <script>
@@ -30,15 +42,56 @@
     <h1>Low-Fidelity Prototype and Test Plan</h1>
     <section id="concepts">
       <h2>Design Concepts:</h2>
+      <div class="img-wrapper">
+        <img src="images/sketch1.png">
+        <img src="images/sketch5.png">
+        <img src="images/sketch8.png">
+        <img src="images/sketch2.png">
+        <img src="images/sketch6.png">
+        <img src="images/sketch9.png">
+        <img src="images/sketch3-4.png">
+        <img src="images/sketch7.png">
+        <img src="images/sketch10.png">
+      </div>
     </section><!--concepts-->
     <section id="prototypes">
       <h2>Prototypes:</h2>
+      <div class="img-wrapper"></div>
     </section><!--prototypes-->
     <section id="goals">
       <h2>Usability Goals:</h2>
+      <div class="wrapper">
+        <div>
+          <h4>New users should be capable of:</h4>
+          <ul>
+            <li>
+              installing the extension to their browser
+            </li>
+            <li>
+              navigating and utilizing the extension within 15 minutes of use.
+            </li>
+          </ul>
+        </div>
+      </div><!--wrapper-->
     </section><!--goals-->
     <section id="tasks">
       <h2>Benchmark Tasks:</h2>
+      <div class="wrapper">
+        <div>
+          <!-- <h4>Within 15-20 minutes of testing users should:</h4> -->
+          <ul>
+            <li>
+              access the extension from browser menu
+            </li>
+            <li>
+              Apply pre-built pallettes such as dark mode or high contrast mode to web page
+            </li>
+            <li>
+              Create a custom pallette in the extension and apply it to web page
+            </li>
+          </ul>
+        </div>
+      </div><!--wrapper-->
     </section><!--tasks-->
   </div><!--container-->
 </body> 
