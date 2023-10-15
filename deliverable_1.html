@@ -61,6 +61,11 @@
   </script>
 </head>
 <body>
+  <div id="hd"><!--hidden by default-->
+    <img id="docs" onclick="hide('docs')" src="images/googledocs.png">
+    <img id="canvas" onclick="hide('canvas')" src="images/canvas.png">
+    <img id="architecture" onclick="hide('architecture')" src="images/architecture.png">
+  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="documents/Potential Project Topics - Group 1.pdf">potential project topics</a>
@@ -174,9 +179,9 @@
           mode for websites that do not natively have one. 
         </div>
         <div style="border:none;">
-          <img class="figure" src="images/googledocs.png">
+          <img onclick="show('docs')" class="figure" src="images/googledocs.png">
           <p>fig.1</p>
-          <img class="figure" src="images/canvas.png">
+          <img onclick="show('canvas')" class="figure" src="images/canvas.png">
           <p>fig.2</p>
         </div>
       </div><!--wrapper-->
@@ -184,7 +189,7 @@
     <section id="diagram">
       <h2>Diagram:</h2>
       <div style="margin:10px">
-        <img src="images/architecture.png" style="width:100%;border-radius:20px;">
+        <img onclick="show('architecture')" src="images/architecture.png" style="width:100%;border-radius:20px;">
       </div>
       
     </section><!--diagram-->

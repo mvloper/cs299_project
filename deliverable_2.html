@@ -32,6 +32,22 @@
   </script>
 </head>
 <body>
+  <div id="hd"><!--hidden by default-->
+    <img id="1" onclick="hide('1')" src="images/sketch1.png">
+    <img id="2" onclick="hide('2')" src="images/sketch5.png">
+    <img id="3" onclick="hide('3')" src="images/sketch8.png">
+    <img id="4" onclick="hide('4')" src="images/sketch2.png">
+    <img id="5" onclick="hide('5')" src="images/sketch6.png">
+    <img id="6" onclick="hide('6')" src="images/sketch9.png">
+    <img id="7" onclick="hide('7')" src="images/sketch3-4.png">
+    <img id="8" onclick="hide('8')" src="images/sketch7.png">
+    <img id="9" onclick="hide('9')" src="images/sketch10.png">
+    <img id="10" onclick="hide('10')" src="images/prototype_default.jpg">
+    <img id="11" onclick="hide('11')" src="images/prototype_high_contrast.jpg">
+    <img id="12" onclick="hide('12')" src="images/prototype_dark_mode.jpg">
+    <img id="13" onclick="hide('13')" src="images/prototype_custom_palette.jpg">
+    <img id="14" onclick="hide('14')" src="images/prototype_new_tab.jpg">
+  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="documents/Potential Project Topics - Group 1.pdf">potential project topics</a>
@@ -43,25 +59,25 @@
     <section id="concepts">
       <h2>Design Concepts:</h2>
       <div class="img-wrapper">
-        <img src="images/sketch1.png">
-        <img src="images/sketch5.png">
-        <img src="images/sketch8.png">
-        <img src="images/sketch2.png">
-        <img src="images/sketch6.png">
-        <img src="images/sketch9.png">
-        <img src="images/sketch3-4.png">
-        <img src="images/sketch7.png">
-        <img src="images/sketch10.png">
+        <img onclick="show('1')" src="images/sketch1.png">
+        <img onclick="show('2')" src="images/sketch5.png">
+        <img onclick="show('3')" src="images/sketch8.png">
+        <img onclick="show('4')" src="images/sketch2.png">
+        <img onclick="show('5')" src="images/sketch6.png">
+        <img onclick="show('6')" src="images/sketch9.png">
+        <img onclick="show('7')" src="images/sketch3-4.png">
+        <img onclick="show('8')" src="images/sketch7.png">
+        <img onclick="show('9')" src="images/sketch10.png">
       </div>
     </section><!--concepts-->
     <section id="prototypes">
       <h2>Prototypes:</h2>
       <div class="img-wrapper">
-        <img src="images/prototype_default.jpg">
-        <img src="images/prototype_high_contrast.jpg">
-        <img src="images/prototype_dark_mode.jpg">
-        <img src="images/prototype_custom_palette.jpg">
-        <img src="images/prototype_new_tab.jpg">
+        <img onclick="show('10')" src="images/prototype_default.jpg">
+        <img onclick="show('11')" src="images/prototype_high_contrast.jpg">
+        <img onclick="show('12')" src="images/prototype_dark_mode.jpg">
+        <img onclick="show('13')" src="images/prototype_custom_palette.jpg">
+        <img onclick="show('14')" src="images/prototype_new_tab.jpg">
       </div>
     </section><!--prototypes-->
     <section id="goals">

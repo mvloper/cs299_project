@@ -1,5 +1,6 @@
 :root{
   --bg:#222222;
+  --bg0:#222222cc;
   --txt:#dddddd;
   --div1:#333333;
   --div2:#444444;
@@ -61,4 +62,18 @@ a:active{color:var(--link3)}
 .wrapper>div>img{
   width:100%;
   box-sizing: border-box;
+}
+#hd{position:fixed;}
+#hd img{
+  position:fixed;
+  display:none;
+  max-width:80vw;
+  max-height:80vh;
+  top:50vh;
+  left:50vw;
+  transform:translate(-50%,-50%);
+  border-top:50vh solid var(--bg0);
+  border-bottom:50vh solid var(--bg0);
+  border-left:50vw solid var(--bg0);
+  border-right:50vw solid var(--bg0);
 }
