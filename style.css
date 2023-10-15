@@ -63,7 +63,7 @@ a:active{color:var(--link3)}
   width:100%;
   box-sizing: border-box;
 }
-.hd{position:fixed;}
+.hd{position:fixed;display:none;}
 .hd img{
   position:fixed;
   display:none;
