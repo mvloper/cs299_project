@@ -63,8 +63,8 @@ a:active{color:var(--link3)}
   width:100%;
   box-sizing: border-box;
 }
-#hd{position:fixed;}
-#hd img{
+.hd{position:fixed;}
+.hd img{
   position:fixed;
   display:none;
   max-width:80vw;
