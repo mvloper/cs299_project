@@ -2,10 +2,8 @@
   --bg:#222222;
   --bg0:#222222cc;
   --txt:#dddddd;
-  --div1:#333333;
-  --div2:#444444;
-  --div3:#555555;
-  --border:#666666;
+  --div:#333333;
+  --border:#444444;
   --txt2:#999999;
   --link:#88BBFF;
   --link2:#6688CC;
@@ -24,7 +22,7 @@ body{
 nav{
   display:flex;
   padding:5px;
-  background-color: var(--div1);
+  background-color: var(--div);
 }
 nav a{
   margin:0 10px 0 10px;
@@ -34,7 +32,7 @@ nav a{
   border-radius:5px;
 }
 nav a:hover{
-  background-color:var(--div2);
+  background-color:var(--border);
 }
 section{
   margin-bottom:50px;
@@ -53,7 +51,6 @@ a:active{color:var(--link3)}
   gap:10px;
 }
 .wrapper>div{
-  display:relative;
   border:2px solid var(--border);
   border-radius: 10px;
   padding:10px;
@@ -63,22 +60,9 @@ a:active{color:var(--link3)}
   width:100%;
   box-sizing: border-box;
 }
-.hd{position:fixed;display:none;}
-.hd>img{
-  position:fixed;
-  display:none;
-  max-width:80vw;
-  max-height:80vh;
-  top:50vh;
-  left:50vw;
-  transform:translate(-50%,-50%);
-  border-top:50vh solid var(--bg0);
-  border-bottom:50vh solid var(--bg0);
-  border-left:50vw solid var(--bg0);
-  border-right:50vw solid var(--bg0);
-}
+
 #extension-icon{
-  background-color: var(--div3);
+  background-color: var(--div);
   position:fixed;
   display:flex;
   flex-direction: column;
@@ -94,13 +78,12 @@ a:active{color:var(--link3)}
   background-color:var(--border)
 }
 #extension-popup{
-  background-color: var(--div3);
+  background-color: var(--div);
   position:fixed;
   top:100px;
   right:20px;
   padding:20px;
   border-radius:10px;
-  display:none;
 }
 #extension-popup li{
   display:flex;

@@ -11,7 +11,7 @@
         flex-direction:column;
       }#Personas h2{margin:0 0 10px 0;}
       .persona{
-        background-color: var(--div1);
+        background-color: var(--div);
         border-radius: 10px;
         margin:10px;
         padding:10px
@@ -70,28 +70,57 @@
     function showhide(id) {
       //hides or shows element it is given based on its current state
       var display = document.getElementById(id).style.display;
-      if (display != "none") {
-        hide(id);
-        console.log('hide')
-      } else {
+      if (display == "none") {
         show(id);
         console.log('show')
+      } else {
+        hide(id);
+        console.log('hide')
       }
     }
     function dark_mode(){
       document.getElementById('dkm').style.backgroundColor = "var(--bg)";
       document.getElementById('hcm').style.backgroundColor = "var(--txt)";
       document.getElementById('csm').style.backgroundColor = "var(--txt)";
+      change_colors("dark");
     }
     function high_contrast(){
       document.getElementById('dkm').style.backgroundColor = "var(--txt)";
       document.getElementById('hcm').style.backgroundColor = "var(--bg)";
       document.getElementById('csm').style.backgroundColor = "var(--txt)";
+      change_colors("light");
     }
     function custom(){
       document.getElementById('dkm').style.backgroundColor = "var(--txt)";
       document.getElementById('hcm').style.backgroundColor = "var(--txt)";
       document.getElementById('csm').style.backgroundColor = "var(--bg)";
+    }
+    
+    function set_colors(){
+      var divs = document.getElementsByTagName( "div");
+      for (index = 0; index < divs.length; index++){
+        let div = divs[index];
+        // let bg_color = div.style.backgroundColor.trimLeft('var(--').trimRight(')');
+        let bg_color = div.backgroundColor
+        console.log(bg_color);
+      }
+    }
+    const root = document.querySelector(':root');
+
+    // set css variable
+    root.style.setProperty('--my-color', 'blue');
+
+
+    function change_colors(type_){
+      var divs = document.getElementsByTagName( "div");
+      set_colors();
+      if (type_ == "dark"){
+        document.body.style.background = "var(--bg)";
+        document.body.style.color = "var(--txt)";
+      } else if (type_ == "light"){
+        document.body.style.background = "var(--bgB)";
+        document.body.style.color = "var(--txtB)";
+      }
     }
   </script>
 </head>
@@ -102,9 +131,9 @@
       </span>
     </div>
   </div>
-  <div id="extension-popup">
+  <div id="extension-popup" style="display:none">
     <ul>
-      <li><button id="dkm" onclick="dark_mode()"></button>Dark Mode</li>
+      <li><button style="background-color:var(--bg)" id="dkm" onclick="dark_mode()"></button>Dark Mode</li>
       <li><button id="hcm" onclick="high_contrast()"></button>High Contrast Mode</li>
       <li><button id="csm" onclick="custom()"></button>Custom Colors</li>
     </ul>

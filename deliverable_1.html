@@ -11,7 +11,7 @@
         flex-direction:column;
       }#Personas h2{margin:0 0 10px 0;}
       .persona{
-        background-color: var(--div1);
+        background-color: var(--div);
         border-radius: 10px;
         margin:10px;
         padding:10px
@@ -61,11 +61,6 @@
   </script>
 </head>
 <body>
-  <div class="hd"><!--hidden by default-->
-    <img id="docs" onclick="hide('docs')" src="images/googledocs.png">
-    <img id="canvas" onclick="hide('canvas')" src="images/canvas.png">
-    <img id="architecture" onclick="hide('architecture')" src="images/architecture.png">
-  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="documents/Potential Project Topics - Group 1.pdf">potential project topics</a>
@@ -179,9 +174,9 @@
           mode for websites that do not natively have one. 
         </div>
         <div style="border:none;">
-          <img onclick="show('docs')" class="figure" src="images/googledocs.png">
+          <img class="figure" src="images/googledocs.png">
           <p>fig.1</p>
-          <img onclick="show('canvas')" class="figure" src="images/canvas.png">
+          <img class="figure" src="images/canvas.png">
           <p>fig.2</p>
         </div>
       </div><!--wrapper-->
@@ -189,7 +184,7 @@
     <section id="diagram">
       <h2>Diagram:</h2>
       <div style="margin:10px">
-        <img onclick="show('architecture')" src="images/architecture.png" style="width:100%;border-radius:20px;">
+        <img src="images/architecture.png" style="width:100%;border-radius:20px;">
       </div>
       
     </section><!--diagram-->
