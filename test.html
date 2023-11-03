@@ -58,9 +58,43 @@
       //hides element it is given
       document.getElementById(id).style.display = "none";
     }
+    function showhide(id) {
+      //hides or shows element it is given based on its current state
+      var display = document.getElementById(id).style.display;
+      if (display != "none") {
+        hide(id);
+        console.log('hide')
+      } else {
+        show(id);
+        console.log('show')
+      }
+    }
+    function dark_mode(){
+      document.getElementById('dkm').style.backgroundColor = "var(--bg)";
+      document.getElementById('hcm').style.backgroundColor = "var(--txt)";
+      document.getElementById('csm').style.backgroundColor = "var(--txt)";
+    }
+    function high_contrast(){
+      document.getElementById('dkm').style.backgroundColor = "var(--txt)";
+      document.getElementById('hcm').style.backgroundColor = "var(--bg)";
+      document.getElementById('csm').style.backgroundColor = "var(--txt)";
+    }
+    function custom(){
+      document.getElementById('dkm').style.backgroundColor = "var(--txt)";
+      document.getElementById('hcm').style.backgroundColor = "var(--txt)";
+      document.getElementById('csm').style.backgroundColor = "var(--bg)";
+    }
   </script>
 </head>
 <body>
+  <div id="extension-icon" onclick="showhide('extension-popup')">☽︎</div>
+  <div id="extension-popup">
+    <ul>
+      <li><button id="dkm" onclick="dark_mode()"></button>Dark Mode</li>
+      <li><button id="hcm" onclick="high_contrast()"></button>High Contrast Mode</li>
+      <li><button id="csm" onclick="custom()"></button>Custom Colors</li>
+    </ul>
+  </div>
   <div class="hd"><!--hidden by default-->
     <img id="docs" onclick="hide('docs')" src="images/googledocs.png">
     <img id="canvas" onclick="hide('canvas')" src="images/canvas.png">

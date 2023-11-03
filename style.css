@@ -77,3 +77,43 @@ a:active{color:var(--link3)}
   border-left:50vw solid var(--bg0);
   border-right:50vw solid var(--bg0);
 }
+#extension-icon{
+  background-color: var(--div3);
+  position:fixed;
+  top:20px;
+  right:20px;
+  width:60px;
+  height:60px;
+  text-align:center;
+  border-radius:10px;
+}
+#extension-icon:hover{
+  background-color:var(--border)
+}
+#extension-popup{
+  background-color: var(--div3);
+  position:fixed;
+  top:100px;
+  right:20px;
+  padding:20px;
+  border-radius:10px;
+  display:none;
+}
+#extension-popup li{
+  display:flex;
+  margin: 0.5em 0 0.5em 0;
+  list-style-type:none;
+  gap:0.5em;
+}
+#extension-popup ul{
+  padding:0;
+  margin:0;
+}
+#extension-popup button{
+  background-color:var(--txt);
+  border:2px solid var(--txt);
+  display:block;
+  width:2em;
+  height:2em;
+}
+#dkm{background-color:var(--bg)}
