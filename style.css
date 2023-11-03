@@ -95,11 +95,31 @@ a:active{color:var(--link3)}
   padding:0;
   margin:0;
 }
+#extension-popup li:first-child{
+  margin:0 0 0.5em 0;
+}
+#extension-popup li:last-child{
+  margin:0.5em 0 0 0;
+}
 #extension-popup button{
-  background-color:var(--txt);
-  border:2px solid var(--txt);
+  background-color:#dddddd;
+  border:2px solid var(--txt2);
   display:block;
   width:2em;
   height:2em;
 }
 #dkm{background-color:var(--bg)}
+label{
+  margin-right:0;
+  margin-left:auto;
+}
+#custom_submit{
+  background-color: var(--border);
+  margin-left:auto;
+  margin-right:0;
+  padding:10px;
+  user-select: none;
+}
+#custom_submit:hover{
+  background-color:var(--bg);
+}

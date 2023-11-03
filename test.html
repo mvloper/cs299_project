@@ -59,11 +59,50 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <script>
+    const root = document.querySelector(':root');
+    const colors = {
+      'dark':{
+        'bg':'#222222',
+        'txt':'#dddddd',
+        'div':'#333333',
+        'border':'#444444'
+      },
+      'light':{
+        'bg':'#eeeeee',
+        'txt':'#333333',
+        'div':'#dddddd',
+        'border':'#cccccc'
+      },
+      'custom':{
+        'bg':'#eeeeee',
+        'txt':'#333333',
+        'div':'#dddddd',
+        'border':'#cccccc'
+      }
+    }
+
+    function updateColors(){
+      console.log('UPDATE COLORS');
+      update('bg');
+      update('txt');
+      update('div');
+      update('border');
+      custom();
+    }
+    function update(input){
+      let value = document.getElementById(input).value.trim();
+      if (value != ''){
+        colors['custom'][input] = '#' + document.getElementById(input).value
+      }
+    }
+
     function show(id) {
       //shows element it is given
+      console.log('SHOW ' + id);
       document.getElementById(id).style.display = "block";
     }
     function hide(id) {
+      console.log('HIDE ' + id);
       //hides element it is given
       document.getElementById(id).style.display = "none";
     }
@@ -72,56 +111,41 @@
       var display = document.getElementById(id).style.display;
       if (display == "none") {
         show(id);
-        console.log('show')
       } else {
         hide(id);
-        console.log('hide')
       }
     }
     function dark_mode(){
-      document.getElementById('dkm').style.backgroundColor = "var(--bg)";
-      document.getElementById('hcm').style.backgroundColor = "var(--txt)";
-      document.getElementById('csm').style.backgroundColor = "var(--txt)";
+      console.log('DARK MODE');
+      document.getElementById('dkm').style.backgroundColor = "#222222";
+      document.getElementById('hcm').style.backgroundColor = "#dddddd";
+      document.getElementById('csm').style.backgroundColor = "#dddddd";
       change_colors("dark");
     }
     function high_contrast(){
-      document.getElementById('dkm').style.backgroundColor = "var(--txt)";
-      document.getElementById('hcm').style.backgroundColor = "var(--bg)";
-      document.getElementById('csm').style.backgroundColor = "var(--txt)";
+      console.log('LIGHT MODE');
+      document.getElementById('dkm').style.backgroundColor = "#dddddd";
+      document.getElementById('hcm').style.backgroundColor = "#222222";
+      document.getElementById('csm').style.backgroundColor = "#dddddd";
       change_colors("light");
     }
     function custom(){
-      document.getElementById('dkm').style.backgroundColor = "var(--txt)";
-      document.getElementById('hcm').style.backgroundColor = "var(--txt)";
-      document.getElementById('csm').style.backgroundColor = "var(--bg)";
+      console.log('CUSTOM MODE');
+      document.getElementById('dkm').style.backgroundColor = "#dddddd";
+      document.getElementById('hcm').style.backgroundColor = "#dddddd";
+      document.getElementById('csm').style.backgroundColor = "#222222";
+      change_colors("custom");
     }
-    
-    function set_colors(){
-      var divs = document.getElementsByTagName( "div");
-      for (index = 0; index < divs.length; index++){
-        let div = divs[index];
-        // let bg_color = div.style.backgroundColor.trimLeft('var(--').trimRight(')');
-        let bg_color = div.backgroundColor
-        console.log(bg_color);
-      }
+    function change_colors(mode){
+      console.log('CHANGE COLORS ' + mode);
+      root.style.setProperty('--bg', colors[mode]['bg'])
+      root.style.setProperty('--txt', colors[mode]['txt'])
+      root.style.setProperty('--div', colors[mode]['div'])
+      root.style.setProperty('--border', colors[mode]['border'])
     }
-    const root = document.querySelector(':root');
 
     // set css variable
     root.style.setProperty('--my-color', 'blue');
-
-
-    function change_colors(type_){
-      var divs = document.getElementsByTagName( "div");
-      set_colors();
-      if (type_ == "dark"){
-        document.body.style.background = "var(--bg)";
-        document.body.style.color = "var(--txt)";
-      } else if (type_ == "light"){
-        document.body.style.background = "var(--bgB)";
-        document.body.style.color = "var(--txtB)";
-      }
-    }
   </script>
 </head>
 <body>
@@ -133,9 +157,19 @@
   </div>
   <div id="extension-popup" style="display:none">
     <ul>
-      <li><button style="background-color:var(--bg)" id="dkm" onclick="dark_mode()"></button>Dark Mode</li>
+      <li><button style="background-color:#222222" id="dkm" onclick="dark_mode()"></button>Dark Mode</li>
       <li><button id="hcm" onclick="high_contrast()"></button>High Contrast Mode</li>
       <li><button id="csm" onclick="custom()"></button>Custom Colors</li>
+      <li>custom colors:</li>
+      <li><label for="bg">background</label>
+      <input type="text" id="bg" name="bg" required minlength="2" maxlength="8" size="10" /></li>
+      <li><label for="txt">text</label>
+      <input type="text" id="txt" name="txt" required minlength="2" maxlength="8" size="10" /></li>
+      <li><label for="div">container</label>
+      <input type="text" id="div" name="div" required minlength="2" maxlength="8" size="10" /></li>
+      <li><label for="border">border</label>
+      <input type="text" id="border" name="border" required minlength="2" maxlength="8" size="10" /></li>
+      <li><div id="custom_submit" onclick="updateColors()">submit</div></li>
     </ul>
   </div>
   <div id="container">
