@@ -47,7 +47,16 @@
         margin:5px;
         width:100%;
       }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+        user-select: none;
+      }
   </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <script>
     function show(id) {
@@ -87,7 +96,12 @@
   </script>
 </head>
 <body>
-  <div id="extension-icon" onclick="showhide('extension-popup')">☽︎</div>
+  <div id="extension-icon" onclick="showhide('extension-popup')">
+    <div class="icon" ><span class="material-symbols-outlined">
+      nightlight
+      </span>
+    </div>
+  </div>
   <div id="extension-popup">
     <ul>
       <li><button id="dkm" onclick="dark_mode()"></button>Dark Mode</li>
@@ -95,234 +109,41 @@
       <li><button id="csm" onclick="custom()"></button>Custom Colors</li>
     </ul>
   </div>
-  <div class="hd"><!--hidden by default-->
-    <img id="docs" onclick="hide('docs')" src="images/googledocs.png">
-    <img id="canvas" onclick="hide('canvas')" src="images/canvas.png">
-    <img id="architecture" onclick="hide('architecture')" src="images/architecture.png">
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="documents/Potential Project Topics - Group 1.pdf">potential project topics</a>
-    <a href="deliverable_1.html">deliverable 1</a>
-    <a href="deliverable_2.html">deliverable 2</a>
-  </nav>
   <div id="container">
-    <h1>Observations and Project Proposal</h1>
-    <section id="users">
-      <h2>Users:</h2>
-      <div class="wrapper">
-        <div>
-          <h4>User A:</h4>
-          <ul>
-          <li>gets headaches from looking at bright screens for too long</li>
-          <li>uses dark mode when it is available</li>
-          <li>wishes dark mode was available on more websites like google docs</li>
-          </ul>
-        </div>
-        <div>
-          <h4>User B:</h4>
-          <ul>
-          <li>is vision impaired and has trouble reading certain websites</li>
-          <li>high contrast helps for readability fro user B</li>
-          <li>while most wbesites have high contrast options not all do</li>
-          </ul>
-        </div>
-        <div>
-          <h4>User C:</h4>
-          <ul>
-          <li>stays up late</li>
-          <li>wants to read things at night without it being bright/waking up their roommate</li>
-          <li>when it is dark, the effects of bright screens are more severe, dark mode would help with this.</li>
-          </ul>
-        </div>
-      </div><!--wrapper-->
-    </section>
-    <section id="Personas">
-      <h2>Personas:</h2>
-      <div class="persona" id="p1">
-        <h2><span>Name:</span> Mim</h2>
-        <div class="wrapper">
-          <div class="left">
-            <div class="wrapper">
-              <img class="portrait" src="images/buny.jpg">
-              <div style="border:none">
-                <p><span>description:</span></p>
-                <p>
-                  they are a math major, and do many hours of homework on their computer every week, gets eye strain and headaches easily from looking at screens so much.</td></tr>
-                </p>
-              </div>
-            </div><!--wrapper-->
-            <table>
-              <tr><td>age:</td><td>20</td></tr>
-              <tr><td>job:</td><td>student</td></tr>
-              <tr><td>income:</td><td>$0/yr</td></tr>
-            </table>
-          </div><!--left-->
-          <div class="right">
-            <table>
-              <tr><td>goals:</td><td>become a professor</td></tr>
-              <tr><td>skills:</td><td>puzzles, mathematics</td></tr>
-              <tr><td>likes:</td><td>video games</td></tr>
-              <tr><td>dislikes:</td><td>getting headaches</td></tr>
-              <tr><td>habits:</td><td>they need to be on their computer a lot for both school and hobbies, but often have to avoid it due to headaches.</td></tr>
-            </table>
-          </div>
-        </div>
-      </div><!--p1-->
-      <div class="persona" id="p2">
-        <h2><span>Name:</span> James</h2>
-        <div class="wrapper">
-          <div class="left">
-            <div class="wrapper">
-              <img class="portrait" src="images/kittys.png">
-              <div style="border:none">
-                <p><span>description:</span></p>
-                <p>
-                  they are a researcher, and are visually impaired so they wear glasses and have trouble reading text when it is small and low contrast.
-                </p>
-              </div>
-            </div><!--wrapper-->
-            <table>
-              <tr><td>age:</td><td>40</td></tr>
-              <tr><td>job:</td><td>microbiologist</td></tr>
-              <tr><td>income:</td><td>$100,000/yr</td></tr>
-            </table>
-          </div><!--left-->
-          <div class="right">
-            <table>
-              <tr><td>goals:</td><td>retire</td></tr>
-              <tr><td>skills:</td><td>writing, public speaking</td></tr>
-              <tr><td>likes:</td><td></td></tr>
-              <tr><td>dislikes:</td><td></td></tr>
-              <tr><td>habits:</td><td>they write research papers in google docs, and tend to avoid using websites with poor contrast.</td></tr>
-            </table>
-          </div><!--right-->
-        </div><!--wrapper-->
-      </div><!--p2-->
-    </section><!--Personas-->
+    <h1>Suspendisse Vel Nulla Vehicula</h1>
     <section id="problem">
-      <h2>Identifying the Problem:</h2>
+      <h2>Duis Sed Sapien:</h2>
       <div class="wrapper">
         <div>
-          The problem we have observed is the lack of dark mode or high contrast mode 
-          on various commonly used websites, such as Google Drive (see fig. 1), which lacks 
-          both, and Canvas (see fig. 2), which has a high contrast mode, but not a dark mode. 
-          This causes issues, such as headaches when looking at a bright screen for too long, 
-          or the inabiity to easily read text without high contrast. Our project would 
-          implement a browser extension that would create dark mode and/or high contrast 
-          mode for websites that do not natively have one. 
+          Cras luctus felis a commodo congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur nec vehicula purus, suscipit ullamcorper nisl. Aliquam ex eros, rhoncus vitae est in, ultricies euismod ipsum. Etiam velit orci, dapibus ut nisl eu, tincidunt tincidunt libero. Nulla gravida aliquam nunc, eget hendrerit massa vestibulum vitae. Donec at enim sit amet neque pulvinar interdum eu non purus. Aliquam ac cursus nisi, tincidunt ultricies quam. Phasellus ornare sodales hendrerit. Etiam quis volutpat arcu, nec congue ipsum. Fusce ultrices lectus pharetra tristique tempor. Duis vel commodo velit, accumsan tempor risus. Vivamus nec augue felis. In rutrum viverra eleifend. Mauris eleifend luctus porta. Quisque a semper justo. Vivamus rutrum mauris ac cursus ornare. Donec. 
         </div>
         <div style="border:none;">
-          <img onclick="show('docs')" class="figure" src="images/googledocs.png">
+          <img class="figure" src="images/chart1.png">
           <p>fig.1</p>
-          <img onclick="show('canvas')" class="figure" src="images/canvas.png">
+          <img class="figure" src="images/chart2.png">
           <p>fig.2</p>
         </div>
       </div><!--wrapper-->
     </section><!--problem-->
+    
     <section id="diagram">
-      <h2>Diagram:</h2>
+      <h2>Vehicula:</h2>
       <div style="margin:10px">
-        <img onclick="show('architecture')" src="images/architecture.png" style="width:100%;border-radius:20px;">
+        <img src="images/diagram.png" style="width:100%;border-radius:20px;background-color:white;">
       </div>
       
     </section><!--diagram-->
     <section id="scenario">
-      <h2>Use Case Scenario:</h2>
+      <h2>Etiam Varius Leo:</h2>
       <div class="wrapper">
         <div>
-        James, one of our personas, installs our extension so he can use the high contrast 
-        features it promises. They go to the Firefox add-ons page and add our extension to 
-        their browser. Once it is added, they navigate to a website that they normally 
-        wouldn't be able to access, click the extensions menu on their browser header, and
-        select our extension. A pop-up appears on their screen with options to turn on 
-        dark mode and high contrast mode. They select to turn on high-contrast mode, which 
-        immediately changes the colors on the web page to make them have a much higher level of 
-        contrast, with a white background and black or blue text and icons. This allows James to 
-        easily read the text on this page, which they normally would struggle with.
-        <br><br>
-        Mim, our other persona, installs our extension through the same process as James, but they
-        do it so that they can use the dark mode feature and get fewer headaches from the bright
-        screen they look at all day. When they select the extension, instead of turning on high-contrast
-        mode, they turn on dark mode, which immediately makes the background of the page they are 
-        looking at dark gray and the text and icons bright, thus making it easier for them to look
-        at for a longer time. </div>
+        
+
+Sed malesuada accumsan pulvinar. Vestibulum cursus nulla commodo nisl tincidunt, eu egestas urna bibendum. Nunc eu libero vitae libero laoreet ornare. Suspendisse vitae elementum lorem. Nam porttitor tincidunt lorem a vehicula. Donec maximus faucibus efficitur. Phasellus et blandit arcu. Suspendisse vel elit tristique, malesuada felis et, venenatis ligula. Nunc sit amet orci nunc. Donec placerat efficitur tempus. Pellentesque vitae semper sem. Sed a lacus a justo efficitur egestas. Curabitur ornare metus nibh, et suscipit augue viverra finibus. Suspendisse potenti. Nunc quam dui, hendrerit at pulvinar a, auctor ornare lorem. Integer sed diam massa.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras a nisi cursus, ultrices urna consectetur, lacinia dui. Aliquam interdum enim non imperdiet molestie. Cras et dui at nisl venenatis sodales dapibus non metus. Sed venenatis finibus orci eget venenatis. Mauris mollis augue a massa mollis lacinia. Aenean lectus erat, hendrerit vel nisl vitae, porttitor ornare nisi. Mauris gravida tincidunt dolor faucibus pulvinar. Vivamus tempor quam nec nibh aliquet, ac facilisis ligula aliquet. Pellentesque eget est non sapien suscipit porta. Duis maximus odio vitae lorem viverra eleifend.  </div>
       </div><!--wrapper-->
     </section><!--scenario-->
-    <section id="finding_products">
-      <h2>Finding Related Products</h2>
-      <h4> We looked at several extensions on each of Google Chrome and Mozilla Firefox: </h4>
-      <div class="wrapper"> 
-        <div>
-          <h3>Chrome:</h3>
-          <ul>
-            <li>Shade Dark Mode: While this worked very well for the most part, it accomplished nothing 
-              when looking at Amazon.com, and likely also fails to do anything on some other websites as well.</li>
-            <li>Night Theme: This theme achieves dark mode by inverting the colors - including those in 
-              images. This leads to an overall bad experience using the extension.</li>
-            <li>Dark Theme for Chrome: If you already have dark mode set to on for a website that has one build 
-              in, this extension will effectively turn it back to light mode. It doesn't invert the colors entirely, 
-              but in terms of brightness - light colors become dark and dark colors become light.</li>
-            <li>Dark Theme - Dark Reader for Chrome: The best of these extensions for Chrome; however, when 
-              changing font color in Google Docs, the colors show up in such a way that it is impossible to 
-              tell what color the text would actually be if you were to print the document.</li>
-            <li>Dark Mode for Web: Inverts all colors other than those in images. On sites with a 
-              native dark mode, effectively turns it back to light mode.</li>
-            <li>Dark Mode Chrome: On most sites we looked at, this extension did nothing. On those where it worked, it 
-              just inverted the colors.</li>
-            <li>Dark Mode - Dark Reader for Chrome: While it works on most websites, it doesn't always look great - more 
-              like the colors were inverted and then a gray filter was applied.</li>
-            <li>High Contrast: This creates an inverted color dark mode, or can increase contrast in light mode. 
-              However, the increased contrast sometimes, such as on Canvas, makes the text harder to read. </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Firefox:</h3>
-          <ul>
-            <li>Turn off the Lights: This is specifically for sites that play video - it dims the screen around the video, 
-              focusing on the video. It works very well for those, but has no application for other sites.</li>
-            <li>Super Dark Mode: While this one works, it generally chooses weird colors. It doesn't make sites 
-              that use a native dark mode go to light mode, but does slightly lighten the background color on at least some sites.</li>
-            <li>Dark Reader: By far the best of these extensions. The only issue is that when changing font colors, the color choices 
-              have been changed and it is therefore very difficult to tell what color the text would be if printed.</li>
-            <li>Dark Mode - Night Eye: While this one works well, it requires a paid subscription if you wish to use it on more than 5 websites.</li>
-            <li>Dark Mode (developed by Bernard): In Google Docs, the paper color stays a bright white, which makes the 
-              extension mostly useless for that site. It also makes some text unreadable in Gmail.</li>
-            <li>Dark Mode (developed by Rojo): This doesn't change any of the colors, it just dims the browser. It has the 
-              same effect as turning down the brightness of your computer.</li>
-            <li>Dark Mode (developed by Dark Mode): On google drive, it inverts the text color, but not the color of the paper - making it white 
-              on white and unreadable. It also removes any theme you have set for your Gmail.</li>
-          </ul>
-        </div>
-      </div><!--wrapper-->
-    </section><!--finding_products-->
-    <section id="comparing_products">
-      <h2>Comparing Related Products</h2>
-      <div class="wrapper">
-        <div>
-          Our proposed solution will work for most, if not all websites. It will, rather than indiscriminately inverting all 
-          of the colors on the page, have allowances built in for things like color pickers to be unaffected. Like many of 
-          the extensions detailed earlier, ours will have the ability to change contrast levels. Our first persona, Mim, 
-          would use this extension to make Overleaf, the site they use to type up mathematical equaitons in LaTeX, have a 
-          dark background so that it would cause less pain from the bright screen. James, our second persona, would use this 
-          extension primarily in Google Docs with the high contrast mode turned on, to make sure that they can read the text 
-          without struggling.
-        </div>
-      </div>
-    </section><!--comparing_products-->
-    <section id="feasability">
-      <h2>Justifying Feasibility</h2>
-      <div class="wrapper">
-        <div>
-          While this seems like an intensive project, we will definitely be able to build the system by the end of the 
-          semester. There are manuals for each browser that detail the process of making an extension, and there is no 
-          additional hardware necessary to create our project. We both have some experience with JavaScript, HTML, and CSS, 
-          which means that there won't be the added pressure of learning new programming or markup languages on top of 
-          implementing them. Once we have it working on one or two sites, it will not be much more dfficult to implement it 
-          on more. With 20-30 hours of work apiece, it should not be too difficult to build our extension within the semester. 
-        </div>
-      </div>
-    </section>
   </div><!--container-->
 </body>
 </html>

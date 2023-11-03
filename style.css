@@ -80,6 +80,9 @@ a:active{color:var(--link3)}
 #extension-icon{
   background-color: var(--div3);
   position:fixed;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   top:20px;
   right:20px;
   width:60px;
