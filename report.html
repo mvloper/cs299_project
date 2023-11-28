@@ -25,6 +25,10 @@
       text-align:center;
       padding:10px;
     }
+    p{
+      margin:10px;
+      margin-bottom:50px;
+    }
   </style>
 </head>
 <body>
@@ -39,8 +43,30 @@
   <div id="container">
     <h1>Project Report</h1>
     <section id="report">
+      <h2>Introduction:</h2>
       <p>
-        [insert project report]
+        We have observed a problem in the lack of dark mode or high contrast mode on various commonly used websites, such as Google Drive, which lacks both, and Canvas, which has a high contrast mode, but not a dark mode. This causes issues, such as headaches when looking at a bright screen for too long, or the inability to easily read text without high contrast. Our goal with this project was to make a browser extension that could be used to turn any website into dark mode, high contrast mode, or a palette of the user’s choice, to help them have access to websites that they don’t have to struggle to read. 
+      </p>
+      <h2>Related Work:</h2>
+      <p>
+        We found many other extensions on both Chrome and Firefox that were made for this same purpose. However, none of them worked very well on all websites. Many simply inverted all of the colors on the page, which made some websites nearly unusable. Others worked on some sites, but failed on sites like Google Docs or Amazon. We believed that we could make a browser extension that would succeed where these failed - one that could be used on any website without causing usability issues. 
+      </p>
+      <h2>Methodology:</h2>
+      <p>
+        We drew out many design concepts to try to figure out how the actual extension should look and function. After spending some time sketching, we decided on a couple designs to further develop into low-fidelity prototypes. After making these prototypes, we decided on a final concept and created a high-fidelity prototype. This prototype is not an actual browser extension, but accomplishes all of the tasks we wanted the final product to be able to do, but limited to one sample website. 
+        We then took this prototype and tested it on several different community members, testing on the usability goals of users being able to launch the extension and users being able to turn on all of the modes of the extension. We counted the number of tries that users took to open the extension, as well as keeping track of the total time it took for the users to complete all of the tasks. We also performed a heuristic evaluation, focusing on the heuristics of visibility of system status, match between system and the real world, and aesthetic and minimalist design, and getting feedback from the users regarding these. 
+      </p>
+      <h2>Results:</h2>
+      <p>
+        Users took between 1-5 minutes to complete all of the tasks given, and most were able to open the extension after 1 try. Multiple users struggled with the step of adding custom colors, because we used hex codes to enter colors and they did not understand hex codes. There were also suggestions to improve the UI, such as making it smaller, using a different icon, changing the check boxes to circles, and changing the colors to be consistent (instead of altering with the rest of the website).
+      </p>
+      <h2>Discussion:</h2>
+      <p>
+        To improve this extension, the biggest issue would be making the color selection more clear. Since a large percentage of the user base likely won’t use hex codes we could implement both a more clear explanation of how to enter colors, and an alternative to hex codes. Ideally we would add a color picker. Allowing users to input the name of a color, accommodating multiple different types of inputs (eg. RGB), and accommodating formatting errors would make the extension more usable. 
+      </p>
+      <h2>Conclusion:</h2>
+      <p>
+        Overall, this prototype is a good start to creating a browser extension that can effectively turn on dark mode or high contrast mode on any website. However, it has its faults, and before we move on to creating the actual system, we would want to address these in the high-fidelity prototype and do more usability testing. After this, we could start to make the actual extension and get it into the Firefox or Chrome stores, to let users all over the world use our extension. 
       </p>
     </section>
     <section id="effortdiary">
