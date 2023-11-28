@@ -16,6 +16,16 @@
       document.getElementById(id).style.display = "none";
     }
   </script>
+  <style>
+    table{
+      width:100%;
+    }
+    td, th{
+      border:2px solid var(--border);
+      text-align:center;
+      padding:10px;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -29,7 +39,38 @@
   <div id="container">
     <h1>Project Report</h1>
     <section id="report">
-      <p>[insert project report]</p>
+      <p>
+        [insert project report]
+      </p>
+    </section>
+    <section id="effortdiary">
+      <h2>Effort Diary</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Deliverable 1</th>
+          <th>Deliverable 2</th>
+          <th>Deliverable 3</th>
+          <th>Deliverable 4</th>
+          <th>Total %</th>
+        </tr>
+        <tr>
+          <td>Olivia</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>Milena</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100</td>
+          <td>100%</td>
+        </tr>
+      </table>
     </section>
   </div><!--container-->
 </body>
